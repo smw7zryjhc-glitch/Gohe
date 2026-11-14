@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق Scratch Adventure - نظرة شاملة</title>
+    <style>
+        :root {
+            --primary-color: #d6336c;
+            --secondary-color: #2b2d42;
+            --bg-color: #12121a;
+            --card-bg: #1e1e2c;
+            --text-color: #f8f9fa;
+            --muted-text: #adb5bd;
+            --accent-gold: #f59f00;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2b1329 0%, #1a1a2e 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(214, 51, 108, 0.3);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--muted-text);
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(214, 51, 108, 0.2);
+            color: #ff6b9d;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+            border: 1px solid var(--primary-color);
+        }
+
+        .section {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.03);
+            padding: 18px;
+            border-radius: 10px;
+            border-right: 4px solid var(--primary-color);
+        }
+
+        .card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: var(--muted-text);
+            font-size: 0.95rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .info-value {
+            color: var(--muted-text);
+        }
+
+        .levels {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .level-tag {
+            background-color: rgba(245, 159, 0, 0.15);
+            color: var(--accent-gold);
+            border: 1px solid rgba(245, 159, 0, 0.4);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--muted-text);
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Scratch Adventure</h1>
+        <p>تطبيق ترفيهي وتفاعلي مصمم خصيصاً للأزواج لتعزيز التقارب العاطفي وكسر الروتين اليومي عبر ألعاب وتحديات متنوعة.</p>
+        <span class="badge">تطبيق للأزواج • +18</span>
+    </header>
+
+    <section class="section">
+        <h2>نظرة عامة على التطبيق</h2>
+        <ul class="info-list">
+            <li>
+                <span class="info-label">اسم التطبيق:</span>
+                <span class="info-value">Scratch Adventure</span>
+            </li>
+            <li>
+                <span class="info-label">التصنيف:</span>
+                <span class="info-value">ترفيه وألعاب تفاعلية للأزواج</span>
+            </li>
+            <li>
+                <span class="info-label">نموذج التسعير:</span>
+                <span class="info-value">مجاني مع خطط مدفوعة (اشتراك شهري ~15$ أو شراء مدى الحياة ~29.99$)</span>
+            </li>
+            <li>
+                <span class="info-label">نظام اللعب:</span>
+                <span class="info-value">تحديات قائمة على الخدش، النقاط، الإنجازات، وتخصيص التفضيلات</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>أبرز الأقسام والألعاب</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>لعبة غرفة النوم</h3>
+                <p>تحتوي على مئات التحديات والأوضاع المتنوعة التي يتم كشفها تدريجياً بأسلوب بطاقات الخدش التفاعلية.</p>
+            </div>
+            <div class="card">
+                <h3>عجلة الرغبات</h3>
+                <p>عجلة حظ تفاعلية تتيح للزوجين تدويرها لاختيار تحديات ورغبات عشوائية بطريقة ممتعة.</p>
+            </div>
+            <div class="card">
+                <h3>لعبة النرد المثير</h3>
+                <p>رمي النرد لتحديد أفعال وتحديات فورية تضيف عنصر المفاجأة والتشويق.</p>
+            </div>
+            <div class="card">
+                <h3>حقيقة أم جرأة</h3>
+                <p>نسخة مخصصة وجريئة للأزواج تضم آلاف الأسئلة والتحديات الحميمية لكسر الحواجز.</p>
+            </div>
+            <div class="card">
+                <h3>ألعاب تفاعلية سريعة</h3>
+                <p>مجموعة ألعاب مصغرة مثل (إكس-أو، هل سبق لك، وأسئلة ليلة الموعد) مصممة لزيادة التفاعل.</p>
+            </div>
+            <div class="card">
+                <h3>ألعاب المسافات البعيدة</h3>
+                <p>أنشطة وتحديات مخصصة للأزواج المتباعدين جغرافياً للحفاظ على التواصل والحماس.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>مستويات التحدي والميزات الإضافية</h2>
+        <p style="color: var(--muted-text);">يتيح التطبيق التدرج في مستوى التحديات بما يتناسب مع رغبة الطرفين، مع إمكانية حفظ التفضيلات وتتبع الإنجازات:</p>
+        <div class="levels">
+            <span class="level-tag">المستوى السهل</span>
+            <span class="level-tag">المستوى المتوسط</span>
+            <span class="level-tag">المستوى الصعب</span>
+            <span class="level-tag">المستوى المتقدم</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>ملف تعريفي منسق لتطبيق Scratch Adventure</p>
+    </footer>
+</div>
+
+</body>
+</html>
